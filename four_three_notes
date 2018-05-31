@@ -1,0 +1,91 @@
+three_four_dict = {
+  'KC': 'Kansas City Chiefs',
+  'NYJ':'New York Jets',
+  'WAS': 'Washington Redskins',
+  'TEN': 'Tennessee Titans',
+  'OAK': 'Oakland Raiders',
+  'HOU': 'Houston Texans',
+  'ARI': 'Arizona Cardinals',
+  'PIT': 'Pittsburgh Steelers',
+  'CHI': 'the Chicago Bears',
+  'BAL': 'Baltimore Ravens',
+  'IND': 'Indianapolis Colts',
+  'LA': 'Los Angeles Rams',
+  'GB': 'Green Bay Packers',
+  'DEN': 'Denver Broncos'
+    }
+
+
+In an analysis of 3413 games:
+
+ydsnet: 0.243315
+4-3 got .2 more yards against them than the 3-4 this year.
+4-3 defence prevented 1/10th less a yard every down.
+.3 more yards after each catch against 4-3
+
+
+games_four_three.describe()- games_three_four.describe()
+
+          GameID        Drive          qtr         down    TimeUnder  \
+
+mean     88.462974     0.032689     0.028362    -0.001482    -0.029618
+
+            TimeSecs  PlayTimeDiff     yrdln   yrdline100      ydstogo  \
+
+mean    -27.067443     -0.068621     0.231459     0.131222    -0.031237
+
+
+           ydsnet     GoalToGo    FirstDown  PlayAttempted  Yards.Gained  \
+
+mean      0.243315    -0.004414     0.004367            0.0     -0.074024
+
+
+            sp        Touchdown       Safety  Onsidekick  PassAttempt  \
+mean     -0.001857    -0.001893    -0.000230         0.0     0.017737
+
+          AirYards  YardsAfterCatch        QBHit  InterceptionThrown  \
+mean     -0.154466         0.037139     0.001115            0.000738
+
+        RushAttempt    Reception  FieldGoalDistance       Fumble         Sack  \
+mean     -0.018992     0.016990          -1.166667     0.000828     0.000016
+
+
+          Challenge.Replay  Accepted.Penalty  Penalty.Yards  PosTeamScore  \
+mean           0.000640          0.002056       0.042246     -0.464130
+
+        DefTeamScore    ScoreDiff  AbsScoreDiff  Timeout_Indicator  \
+mean       0.455979    -0.920109     -0.014199           0.000267
+
+
+            posteam_timeouts_pre  HomeTimeouts_Remaining_Pre  \
+
+mean              -0.021458                    0.01
+
+            AwayTimeouts_Remaining_Pre  HomeTimeouts_Remaining_Post  \
+
+mean                     0.015044                     0.018475
+
+
+AwayTimeouts_Remaining_Post  No_Score_Prob  Opp_Field_Goal_Prob  \
+mean                      0.015144      -0.000171             0.000299
+std                      -0.012805       0.000194            -0.000236
+
+
+      Opp_Safety_Prob  Opp_Touchdown_Prob  Field_Goal_Prob  Safety_Prob  \
+
+mean         -0.000002            0.000461        -0.000379     0.000009
+
+
+Touchdown_Prob  ExPoint_Prob  TwoPoint_Prob        ExpPts          EPA  \
+
+mean        -0.000184           0.0            0.0 -6.526244e-03    -0.001799
+
+
+            airEPA       yacEPA   Home_WP_pre   Away_WP_pre  Home_WP_post  \
+
+mean     -0.069104     0.028073 -1.566947e-02  1.566947e-02     -0.015947
+
+
+        Away_WP_post      Win_Prob          WPA       airWPA       yacWPA  \
+
+mean       0.015947 -2.283611e-02    -0.000490    -0.001684     0.000080
